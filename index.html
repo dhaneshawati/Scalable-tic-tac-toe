@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+    <h1>Tic-Tac-Toe</h1>
+    <div class="players" id="playerinfo">
+        <div class="player1">
+            <label for="p1">Player 1:</label>
+            <input type="text" name="p1" id="p1">
+        </div>
+        <div class="player2">
+            <label for="p2">Player 2:</label>
+            <input type="text" name="p2" id="p2">
+        </div>
+        <div class="bordsize">
+            <label for="size">Bord Size:</label>
+            <select name="size" id="size">
+                <option value="0">select from below:</option>
+                <option value="3">3 X 3</option>
+                <option value="4">4 X 4</option>
+                <option value="5">5 X 5</option>
+                <option value="6">6 X 6</option>
+                <option value="7">7 X 7</option>
+                <option value="8">8 X 8</option>
+                <option value="9">9 X 9</option>
+                <option value="10">10 X 10</option>
+            </select>
+        </div>
+        <button class="start" id="gamestarter" onclick="createPlayer()">Let's Start!</button> 
+    </div>
+
+    <div class="wrapper">
+        <div id="turn">
+            <h2 id="playerTurn"></h2>
+           </div>
+           <div class="container">
+               <table id="boxes">
+                   
+               </table>
+           </div>
+    </div>
+   
+    <div class="result">
+        <h3 id="game-result"></h3>
+    </div>
+    <div class="reset">
+        <button class="start" id="reset" type="reset">RESET</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
