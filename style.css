@@ -207,7 +207,8 @@ button:hover{
     visibility: visible;
 }
 .hidden{
-    display: none;
+    /* display: none; */
+    visibility: hidden;
 }
 
 /* Responsive */
