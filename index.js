@@ -208,6 +208,7 @@ if(flag)
         }
         document.getElementById('game-result').innerText = "";
         document.getElementById('playerTurn').innerText = "";
+        turnDiv.classList.remove("hidden");
         createPlayer();
         // console.log(bord);
       }
