@@ -11,7 +11,7 @@ body{
 .header{
     height: 10%;
     width: 20%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: auto;
 }
 .players{
@@ -33,7 +33,7 @@ body{
 .btndiv{
     width: 10vw;
     height: 10vh;
-    border: 1px solid violet;
+    /* border: 1px solid violet; */
 }
 button{
     /* display: inline-block; */
