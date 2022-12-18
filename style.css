@@ -91,7 +91,7 @@ button:hover{
     /* align-items: center; */
     row-gap: 0.5%;
     position: relative;
-    left: 27%;
+    left: 31%;
     top: -38vh;
 }
 .row{
@@ -159,7 +159,7 @@ button:hover{
     /* border: 1px solid red; */
     text-align: center;
     /* margin: auto; */
-    left: 38%;
+    left: 28%;
 
 }
 #playerTurn{
@@ -177,7 +177,7 @@ button:hover{
     top: -9.8rem; */
     text-align: center;
     left: 41%;
-    top: -126vh;
+    top: -142vh;
 }
 #game-result{
     top: 0;
@@ -191,7 +191,7 @@ button:hover{
     /* border: 1px solid green; */
     position: relative;
     left: 67%;
-    top: -112vh;
+    top: -130vh;
 }
 #reset{
     width: 90%;
