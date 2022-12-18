@@ -213,17 +213,35 @@ button:hover{
 
 /* Responsive */
 
+@media screen and (max-width: 1300px){
+    .result{
+        left: 40%;
+        top: -125vh;
+        /* left: 59%;
+        top: -123vh; */
+    }
+    .bordsize{
+        width: 22vw;
+    }
+    .reset{
+        left: 61%;
+        top: -110vh;
+    }
+}
+
 @media screen and (max-width: 1160px){
     .bordsize{
         width: 22vw;
     }
     .reset{
-        left: 70%;
-        top: -112vh;
+        left: 62%;
+        top: -115vh;
     }
     .result{
-        left: 59%;
-        top: -123vh;
+        left: 51%;
+        top: -125vh;
+        /* left: 59%;
+        top: -123vh; */
     }
 }
 @media screen and (max-width: 950px){
@@ -234,18 +252,19 @@ button:hover{
         width: 22%;
     }
     .reset{
-        left: 110%;
+        left: 104%;
         top: -62vh;
         height: 8vh;
         width: 14vw;
     }
     .result{
-        left: 73%;
-        top: -79vh;
+        left: 66%;
+        top: -75vh;
     }
     .btndiv{
         width: 14vw;
         height: 8vh;
+        margin-top: 20%;
     }
 }
 @media screen and (max-width: 768px){
@@ -261,14 +280,14 @@ button:hover{
     }
     
     .header{
-        width: 27%;
+        width: 32%;
     }
     .result {
-        left: 62%;
-        top: -80vh;
+        left: 42%;
+        top: -77vh;
     }
     .wrapper{
-        left: 22%;
+        left: 14%;
         top: -38vh;
     }
 }
@@ -335,11 +354,11 @@ button:hover{
     }
     .result{
         left: 0;
-        top: -24vh;
+        top: -27vh;
     }
     .reset{
-        left: -36%;
-        top: 0;
+        left: -38%;
+        top: -75px;
         height: 8vh;
         width: 22vw;
     }
