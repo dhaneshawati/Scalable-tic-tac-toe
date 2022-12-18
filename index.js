@@ -4,6 +4,9 @@ let container = document.querySelector('#boxes');
 let size;
 let totalElements;
 let flag = true;
+let resultDiv = document.querySelector('.result');
+let turnDiv = document.getElementById('turn');
+
 // for(let i=0;i<totalElements;i++)
 // {
 //   let grid = document.createElement("div");
@@ -122,15 +125,21 @@ if(flag)
         {
           message = `${turn} Wins the Game 🎉🎊🎊`;
           gameEnd = true;
+          turnDiv.classList.add("hidden");
+          resultDiv.classList.remove("hidden");
         }
         else if(rowsum === -size || colsum === -size || d1 === -size || d2 === -size)
         {
           message = `${turn} Wins the Game 🎉🎊🎊`;
           gameEnd = true;
+          turnDiv.classList.add("hidden");
+          resultDiv.classList.remove("hidden");
         }
         else if (count === totalElements){
             message = `The Game is DRAW`;
             gameEnd = true;
+            turnDiv.classList.add("hidden");
+            resultDiv.classList.remove("hidden");
         }
         document.getElementById('game-result').innerText = message;
          rowsum = 0;
