@@ -2,10 +2,17 @@ h1{
     display: flex;
     justify-content: center;
 }
+
 body{
     background-color: #CFF5E7;
     width: 100%;
     height: 100%;
+}
+.header{
+    height: 10%;
+    width: 20%;
+    border: 1px solid red;
+    margin: auto;
 }
 .players{
     background-color: #A0E4CB;
@@ -23,11 +30,16 @@ body{
     padding: 10px;
     margin: 10px; */
 }
+.btndiv{
+    width: 10vw;
+    height: 10vh;
+    border: 1px solid violet;
+}
 button{
     /* display: inline-block; */
     background-color: #59C1BD;
-    width: 30%;
-    height: 20%;
+    width: 90%;
+    height: 90%;
     padding: 5px;
     border: none;
     border-radius: 20px;
@@ -79,8 +91,8 @@ button:hover{
     /* align-items: center; */
     row-gap: 0.5%;
     position: relative;
-    left: 30%;
-    top: -40vh;
+    left: 25%;
+    top: -38vh;
 }
 .row{
     background-color: #59C1BD;
@@ -163,8 +175,8 @@ button:hover{
     /* left: 26.5rem;
     top: -9.8rem; */
     text-align: center;
-    left: 75%;
-    top: -120vh;
+    left: 62%;
+    top: -119vh;
 }
 #game-result{
     top: 0;
@@ -177,8 +189,8 @@ button:hover{
     width:10vw;
     /* border: 1px solid green; */
     position: relative;
-    left: 78%;
-    top: -115vh;
+    left: 66%;
+    top: -142vh;
 }
 #reset{
     width: 90%;
@@ -196,4 +208,194 @@ button:hover{
 }
 .hidden{
     display: none;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1160px){
+    .bordsize{
+        width: 22vw;
+    }
+    .reset{
+        left: 70%;
+        top: -112vh;
+    }
+    .result{
+        left: 59%;
+        top: -123vh;
+    }
+}
+@media screen and (max-width: 950px){
+    .bordsize{
+        width: 27vw;
+    }
+    .header{
+        width: 22%;
+    }
+    .reset{
+        left: 110%;
+        top: -62vh;
+        height: 8vh;
+        width: 14vw;
+    }
+    .result{
+        left: 73%;
+        top: -79vh;
+    }
+    .btndiv{
+        width: 14vw;
+        height: 8vh;
+    }
+}
+@media screen and (max-width: 768px){
+    .btndiv{
+        position: relative;
+        left: -2%;
+        top: -6%;
+        margin-top: 20%;
+    }
+    .reset {
+        left: 97%;
+        top: -66vh;
+    }
+    
+    .header{
+        width: 27%;
+    }
+    .result {
+        left: 62%;
+        top: -80vh;
+    }
+    .wrapper{
+        left: 22%;
+        top: -38vh;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .header{
+        width: 50%;
+        margin: 5px 150px;
+        font-size: small;
+    }
+    .wrapper{
+        height: 59vw;
+        width: 60vh;
+        left: 30%;
+        top: -38vh;
+    }
+    .result{
+        left: 81%;
+        top: -90vh;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: small;
+    }
+    .reset {
+        left: 90%;
+        top: -70vh;
+        height: 9vh;
+        width: 16vw;
+    }
+    .btndiv {
+        left: -9%;
+        top: -6%;
+        width: 15vw;
+        height: 15vh;
+    }
+    button{
+        width: 95%;
+        height: 95%;
+    }
+    .players{
+        width: 40vw;
+        font-size: small;
+    }
+    .bordsize {
+        width: 35vw;
+    }
+}
+@media screen and (max-width: 420px){
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .btndiv {
+        left: -3%;
+        top: -1%;
+        width: 25vw;
+        height: 7vh;
+    }
+    .wrapper{
+        left: 0;
+        top: 0;
+    }
+    .result{
+        left: 0;
+        top: -24vh;
+    }
+    .reset{
+        left: -38%;
+        top: 0;
+        height: 8vh;
+        width: 24vw;
+    }
+    .players {
+        width: 50vw;
+    }
+    .bordsize {
+        width: 39vw;
+        text-align: center;
+    }
+    table{
+        width: 40%;
+        height: 34vh;
+    }
+    .container{
+        left: 2%;
+    }
+}
+@media screen and (max-width: 300px){
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .btndiv {
+        left: -3%;
+        top: -8%;
+        width: 25vw;
+        height: 7vh;
+    }
+    .wrapper{
+        left: 0;
+        top: 0;
+    }
+    .result{
+        left: 0;
+        top: -24vh;
+    }
+    .reset{
+        left: -38%;
+        top: 0;
+        height: 8vh;
+        width: 24vw;
+    }
+    .players {
+        width: 62vw;
+    }
+    .bordsize {
+        width: 39vw;
+        text-align: center;
+    }
+    table{
+        width: 40%;
+        height: 34vh;
+    }
+    .container{
+        left: 2%;
+    }
 }
